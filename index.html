@@ -484,6 +484,12 @@ section{padding:100px 5vw 80px;min-height:100vh;scroll-margin-top:64px}
 .project-card.visible .proj-tag:nth-child(4){transition-delay:.8s}
 .project-card.visible .proj-tag:nth-child(5){transition-delay:.9s}
 .proj-tag:hover{background:var(--amber);color:#fff;box-shadow:0 4px 12px rgba(200,137,58,.3)}
+.proj-link{display:inline-flex;align-items:center;gap:.3rem;margin-top:1rem;font-size:.82rem;font-weight:600;color:var(--amber-dark);text-decoration:none;transition:gap .3s}
+.proj-link:hover{gap:.6rem}
+.proj-links-row{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.proj-links-row .proj-link{margin-top:0}
+.project-card{position:relative}
+.proj-badge{position:absolute;top:14px;right:14px;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--amber),var(--brown));padding:4px 12px;border-radius:20px;z-index:2}
 
 /* ─── SKILLS ─── */
 #skills{background:var(--warm)}
@@ -933,7 +939,7 @@ footer{
           <div class="hero-stat-label">Years Exp</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-num">5+</div>
+          <div class="hero-stat-num">8+</div>
           <div class="hero-stat-label">Projects</div>
         </div>
         <div class="hero-stat">
@@ -1088,8 +1094,89 @@ footer{
   <div class="projects-grid">
 
     <div class="project-card scroll-proj">
+      <span class="proj-badge">Latest</span>
       <div class="proj-left">
         <div class="proj-num">01</div>
+        <div class="proj-type">GenAI · Job Search</div>
+      </div>
+      <div class="proj-right">
+        <div class="proj-title">JobSpark AI</div>
+        <div class="proj-desc">AI-powered job matching platform with resume parsing, skill extraction, and intelligent job recommendations. Improves candidate-job alignment through automated profile analysis.</div>
+        <div class="proj-outcomes">
+          <div class="proj-outcome">Automated resume parsing &amp; skill extraction</div>
+          <div class="proj-outcome">Intelligent job recommendation engine</div>
+          <div class="proj-outcome">Improved candidate-job alignment</div>
+          <div class="proj-outcome">End-to-end profile analysis pipeline</div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">GenAI</span>
+          <span class="proj-tag">NLP</span>
+          <span class="proj-tag">Resume Parsing</span>
+          <span class="proj-tag">Job Matching</span>
+        </div>
+        <div class="proj-links-row">
+          <a href="https://job-spark-ai-91.vercel.app/" target="_blank" rel="noopener" class="proj-link">Visit Project →</a>
+          <a href="https://github.com/akashtiwari232/job-spark-ai-91" target="_blank" rel="noopener" class="proj-link">Code →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card scroll-proj">
+      <span class="proj-badge">Latest</span>
+      <div class="proj-left">
+        <div class="proj-num">02</div>
+        <div class="proj-type">Full-Stack</div>
+      </div>
+      <div class="proj-right">
+        <div class="proj-title">Referral Network Platform</div>
+        <div class="proj-desc">Professional referral networking application enabling job seekers to connect with employees for referrals, with user profiles, referral requests, and opportunity discovery features.</div>
+        <div class="proj-outcomes">
+          <div class="proj-outcome">Employee-to-seeker referral connections</div>
+          <div class="proj-outcome">Rich user profile &amp; matching system</div>
+          <div class="proj-outcome">Referral request workflow</div>
+          <div class="proj-outcome">Opportunity discovery feed</div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">Node.js</span>
+          <span class="proj-tag">MongoDB</span>
+          <span class="proj-tag">Networking</span>
+        </div>
+        <a href="https://refferalnetworkfrontend.vercel.app/" target="_blank" rel="noopener" class="proj-link">Visit Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card scroll-proj">
+      <span class="proj-badge">In Progress</span>
+      <div class="proj-left">
+        <div class="proj-num">03</div>
+        <div class="proj-type">LegalTech · GenAI</div>
+      </div>
+      <div class="proj-right">
+        <div class="proj-title">LexLawAI</div>
+        <div class="proj-desc">AI-powered legal drafting and research platform using LLMs and RAG to automate document generation and case-law retrieval, reducing lawyers' workload and improving efficiency.</div>
+        <div class="proj-outcomes">
+          <div class="proj-outcome">Automated legal document generation</div>
+          <div class="proj-outcome">Case-law retrieval via RAG</div>
+          <div class="proj-outcome">Reduced lawyer workload</div>
+          <div class="proj-outcome">Currently in active development</div>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">LLM</span>
+          <span class="proj-tag">RAG</span>
+          <span class="proj-tag">LegalTech</span>
+          <span class="proj-tag">Python</span>
+        </div>
+        <div class="proj-links-row">
+          <a href="https://lex-india-scribe.lovable.app/auth" target="_blank" rel="noopener" class="proj-link">Visit Project →</a>
+          <a href="https://github.com/akashtiwari232/lex-india-ai" target="_blank" rel="noopener" class="proj-link">Code →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card scroll-proj">
+      <div class="proj-left">
+        <div class="proj-num">04</div>
         <div class="proj-type">GenAI</div>
       </div>
       <div class="proj-right">
@@ -1113,7 +1200,7 @@ footer{
 
     <div class="project-card scroll-proj">
       <div class="proj-left">
-        <div class="proj-num">02</div>
+        <div class="proj-num">05</div>
         <div class="proj-type">Analytics</div>
       </div>
       <div class="proj-right">
@@ -1137,7 +1224,7 @@ footer{
 
     <div class="project-card scroll-proj">
       <div class="proj-left">
-        <div class="proj-num">03</div>
+        <div class="proj-num">06</div>
         <div class="proj-type">Healthcare AI</div>
       </div>
       <div class="proj-right">
@@ -1161,7 +1248,7 @@ footer{
 
     <div class="project-card scroll-proj">
       <div class="proj-left">
-        <div class="proj-num">04</div>
+        <div class="proj-num">07</div>
         <div class="proj-type">BI / Reporting</div>
       </div>
       <div class="proj-right">
@@ -1185,7 +1272,7 @@ footer{
 
     <div class="project-card scroll-proj">
       <div class="proj-left">
-        <div class="proj-num">05</div>
+        <div class="proj-num">08</div>
         <div class="proj-type">ML / Data</div>
       </div>
       <div class="proj-right">
@@ -1378,7 +1465,7 @@ footer{
   <div class="achiev-stats">
     <div class="achiev-stat scroll-reveal"><div class="achiev-stat-num" data-count="3">0</div><div class="achiev-stat-label">Years Experience</div></div>
     <div class="achiev-stat scroll-reveal"><div class="achiev-stat-num" data-count="8">0</div><div class="achiev-stat-label">Certifications</div></div>
-    <div class="achiev-stat scroll-reveal"><div class="achiev-stat-num" data-count="5">0</div><div class="achiev-stat-label">Projects</div></div>
+    <div class="achiev-stat scroll-reveal"><div class="achiev-stat-num" data-count="8">0</div><div class="achiev-stat-label">Projects</div></div>
     <div class="achiev-stat scroll-reveal"><div class="achiev-stat-num" data-count="2">0</div><div class="achiev-stat-label">Awards</div></div>
   </div>
 
